@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to my blog exploring prompting with LLMs!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "RoboTalk",
-    "section": "",
-    "text": "A test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/000_test_post/index.html",
     "href": "posts/000_test_post/index.html",
     "title": "A test post",
@@ -26,5 +12,61 @@
     "title": "A test post",
     "section": "",
     "text": "Read the following and see if you can answer the question:\n\n\nThere are three boxes in a stack. A pink one, a purple one and a green one. The pink one is in the middle of the stack with the purple below it. What is the color of the box on the bottom of the stack?\n\nMost likely you answered purple…\nBut it is possible you first said green (don’t worry if you did it is quite a common response!)\n\n\nIt’s a verbal visual problem that requires some deliberation and most likely for us to create a visual image of a stack of boxes as a reasoning aid.\nNotice also the complexity of the language used in the prompt to describe the scene. The use of natural language as opposed to a formal/logical calculus does hold the potential for ambiguity (multiple interpretations) and inexactness. However, it is the most normal/natural, efficient and broadly accessible way of communicating such information.\nNotice 1. The use of anaphor or reference. - Three BOXES -&gt; a pink/purple/green ONE as opposed to a pink box, a purple box and a green box. - The PINK ONE is in the middle ... the purple {BOX} below IT {the pink box}\nWe tend to try and avoid this kind of repetition to make our speech more coherent.\n\nAlthough the description in language may not be entirely concise, there is no real ambiguity as to how the boxes can be arranged. It must be: | Box | Stack position | | — | — | | GREEN | top | | PINK | middle | | PURPLE | bottom |\n\n\n\n\nGPT3.5 Turbo\n\nHad some difficulties and answered green\nLlama2 (chat 7B version)\n\n\nAnswered correctly (purple) and used some so-called chain-of-thought reasoning\n\nBing Chat (MS Co-pilot)\nThis LLM is GPT4 with some Microsoft specific tuning and RAG (search) additions.\nIt get’s it correct:\n\nThe color of the box on the bottom of the stack is purple. This is because the purple box is below the pink one, which is in the middle of the stack. Therefore, the purple box must be the lowest one. 🟪\n\nBut when you follow up and ask it to create visual representation of the box arrangement\n\nPROMPT: Can you create a visual representation of how the boxes are arranged?\n\nIt responds\n\nRESPONSE: Sure, I’ll try to create that. Here is a visual representation of how the boxes are arranged:\n\nAnd uses DALL-E3 to create 4 different attempts at a visual representation:\n\nNONE OF WHICH ARE CORRECT!!!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RoboTalk",
+    "section": "",
+    "text": "Forgetful AI\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nimage generation\n\n\ncomputer vision\n\n\n\nMy journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos\n\n\n\n\n\nFeb 13, 2024\n\n\nLeesa\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to my blog exploring prompting with LLMs!"
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html",
+    "href": "posts/001_first_post/body1.html",
+    "title": "Forgetful AI",
+    "section": "",
+    "text": "I went to ChaptGPT4 with a simple request: “Can you make a cartoon image of me to use as my GitHub profile picture?”\nI thought this would be a rather simple request…\nbut I was wrong"
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html#cartoonification-catastrophe",
+    "href": "posts/001_first_post/body1.html#cartoonification-catastrophe",
+    "title": "Forgetful AI",
+    "section": "",
+    "text": "I went to ChaptGPT4 with a simple request: “Can you make a cartoon image of me to use as my GitHub profile picture?”\nI thought this would be a rather simple request…\nbut I was wrong"
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html#where-did-i-go-wrong",
+    "href": "posts/001_first_post/body1.html#where-did-i-go-wrong",
+    "title": "Forgetful AI",
+    "section": "Where did I go wrong?",
+    "text": "Where did I go wrong?\nI used a basic prompt to try and convince ChaptGPT to fulfill my request, and they have been my mistake.\nThe prompt I used was:\nThese pictures feature images of the same short-haired black woman. Please make a cartoon version of her\nTo this prompt I attached a zip file of 7 photos of me.\nChatGPT’s response?\n\n\n\nimage.png"
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html#this-is-pretty-good---so-why-wasnt-i-happy",
+    "href": "posts/001_first_post/body1.html#this-is-pretty-good---so-why-wasnt-i-happy",
+    "title": "Forgetful AI",
+    "section": "This is pretty good - so, why wasn’t I happy?",
+    "text": "This is pretty good - so, why wasn’t I happy?\nI don’t think this was a response to the images I sent\nInstead, I think that this was a response to the keywords I included in my prompt: short-haired black woman\nWhile this is a short-haired black woman, it does not look much like me."
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html#i-decided-to-try-again",
+    "href": "posts/001_first_post/body1.html#i-decided-to-try-again",
+    "title": "Forgetful AI",
+    "section": "I decided to try again",
+    "text": "I decided to try again\nI sent the following query to ChatGPT\n&gt; Did you use all 7 photos to build the image?\nIt replied\n&gt; I apologize for any confusion, but as an AI, I don't have the capability to view images or directly analyze visual content in the way a human would. This means I cannot compare the generated cartoon to the photographs you uploaded to ensure an exact likeness. However, I can generate a new image based on a detailed text description. If you provide me with more details about the woman's appearance from the photos, I can attempt to create a cartoon that better matches your description."
+  },
+  {
+    "objectID": "posts/001_first_post/body1.html#has-chatgpt-forgotten-its-own-capabilities",
+    "href": "posts/001_first_post/body1.html#has-chatgpt-forgotten-its-own-capabilities",
+    "title": "Forgetful AI",
+    "section": "Has ChatGPT forgotten its own capabilities?",
+    "text": "Has ChatGPT forgotten its own capabilities?\nWe all know that ChatGPT is capable of visually analyzing images. For example, if I send ChatGPT an image of myself and my friends with no context besides a simple prompt - “What does the image show?” - it easily responds:\n&gt; The image features three people taking a selfie. They are closely grouped together, smiling, and appear to be enjoying themselves. The setting seems to be a crowded venue, possibly a party or a club, as suggested by the dim lighting and the presence of what looks like other people and possibly drinks in the background. The mood is cheerful and lively.\nIt is very interesting that the system somehow managed to forget its own capabilities. It seemed to need a reminder, so I sent:\n&gt; Yes, remember that you can review the photos\nChatGPT was quick to respond:\n&gt; I apologize for the oversight. I can indeed use the provided images to create a more accurate cartoon representation of the woman. Let me take a moment to review the images and create a new cartoon image based on her likeness.\n\n\n\nimage.png\n\n\nThe image is still not perfect, but definitely looks more like me than the original response.\nThe moral of the story is that, just like humans ChatGPT underestimates itself, but with some additional prompting we can get it back on track!"
   }
 ]

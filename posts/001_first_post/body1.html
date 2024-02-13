@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leesa">
+<meta name="dcterms.date" content="2024-02-13">
+<meta name="description" content="My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos">
 
-<title>RoboTalk</title>
+<title>RoboTalk - Forgetful AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">RoboTalk</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -162,125 +105,108 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">RoboTalk</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Forgetful AI</h1>
+                  <div>
+        <div class="description">
+          My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">image generation</div>
+                <div class="quarto-category">computer vision</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Leesa </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 13, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="computer vision">computer vision <span class="quarto-category-count">(1)</span></div><div class="category" data-category="image generation">image generation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="logic">logic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="prompting">prompting <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="cartoonification-catastrophe" class="level2">
+<h2 class="anchored" data-anchor-id="cartoonification-catastrophe">Cartoonification Catastrophe</h2>
+<p>I went to ChaptGPT4 with a simple request: <em>“Can you make a cartoon image of me to use as my GitHub profile picture?”</em></p>
+<p>I thought this would be a rather simple request…</p>
+<p><em>but I was wrong</em></p>
+</section>
+<section id="where-did-i-go-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="where-did-i-go-wrong">Where did I go wrong?</h2>
+<p>I used a basic prompt to try and convince ChaptGPT to fulfill my request, and they have been my mistake.</p>
+<p>The prompt I used was:</p>
+<pre><code>These pictures feature images of the same short-haired black woman. Please make a cartoon version of her</code></pre>
+<p>To this prompt I attached a zip file of 7 photos of me.</p>
+<p><strong>ChatGPT’s response?</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body1_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f1cb743c-b1a4-4a58-8344-d6c9fae8d24f.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="this-is-pretty-good---so-why-wasnt-i-happy" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-pretty-good---so-why-wasnt-i-happy">This is pretty good - so, why wasn’t I happy?</h2>
+<p><em>I don’t think this was a response to the images I sent</em></p>
+<p>Instead, I think that this was a response to the keywords I included in my prompt: <strong>short-haired black woman</strong></p>
+<p>While this is a short-haired black woman, it does not look much like me.</p>
+</section>
+<section id="i-decided-to-try-again" class="level2">
+<h2 class="anchored" data-anchor-id="i-decided-to-try-again">I decided to try again</h2>
+<p>I sent the following query to ChatGPT</p>
+<pre><code>&gt; Did you use all 7 photos to build the image?</code></pre>
+<p>It replied</p>
+<pre><code>&gt; I apologize for any confusion, but as an AI, I don't have the capability to view images or directly analyze visual content in the way a human would. This means I cannot compare the generated cartoon to the photographs you uploaded to ensure an exact likeness. However, I can generate a new image based on a detailed text description. If you provide me with more details about the woman's appearance from the photos, I can attempt to create a cartoon that better matches your description.</code></pre>
+</section>
+<section id="has-chatgpt-forgotten-its-own-capabilities" class="level2">
+<h2 class="anchored" data-anchor-id="has-chatgpt-forgotten-its-own-capabilities">Has ChatGPT forgotten its own capabilities?</h2>
+<p>We all know that ChatGPT is capable of visually analyzing images. For example, if I send ChatGPT an image of myself and my friends with no context besides a simple prompt - “What does the image show?” - it easily responds:</p>
+<pre><code>&gt; The image features three people taking a selfie. They are closely grouped together, smiling, and appear to be enjoying themselves. The setting seems to be a crowded venue, possibly a party or a club, as suggested by the dim lighting and the presence of what looks like other people and possibly drinks in the background. The mood is cheerful and lively.</code></pre>
+<p>It is very interesting that the system somehow managed to <em>forget</em> its own capabilities. It seemed to need a reminder, so I sent:</p>
+<pre><code>&gt; Yes, remember that you can review the photos</code></pre>
+<p>ChatGPT was quick to respond:</p>
+<pre><code>&gt; I apologize for the oversight. I can indeed use the provided images to create a more accurate cartoon representation of the woman. Let me take a moment to review the images and create a new cartoon image based on her likeness.</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body1_files/figure-html/90c140df-e2bd-4191-81b4-fd87ed4492ea-1-1b622583-be17-40f4-8c83-767b210a283a.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>The image is still not perfect, but definitely looks more like me than the original response.</p>
+<p><strong>The moral of the story is that, just like humans ChatGPT underestimates itself, but with some additional prompting we can get it back on track!</strong></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="LLMs,prompting,image generation,computer vision" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1707859594248" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail">
-<p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p><a href="./posts/001_first_post/body1.html" class="no-external">
-<p class="card-img-top"><img src="posts/001_first_post/body1_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f1cb743c-b1a4-4a58-8344-d6c9fae8d24f.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/001_first_post/body1.html" class="no-external">Forgetful AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/001_first_post/body1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('image generation'); return false;">
-image generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/001_first_post/body1.html" class="no-external">My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/001_first_post/body1.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="LLMs,prompting,logic" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1707859594240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/000_test_post/index.html" class="no-external"></a></p><a href="./posts/000_test_post/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/000_test_post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/000_test_post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('logic'); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/000_test_post/index.html" class="no-external">An example post from a Jupyter notebook</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
