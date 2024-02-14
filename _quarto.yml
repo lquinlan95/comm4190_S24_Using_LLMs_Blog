@@ -9,7 +9,7 @@ website:
 
 format:
   html:
-    theme: cyborg
+    theme: lumen
     css: styles.css
 
 execute:
