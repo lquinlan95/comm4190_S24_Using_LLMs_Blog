@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leesa">
+<meta name="dcterms.date" content="2024-02-13">
+<meta name="description" content="My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos">
 
-<title>RoboTalk</title>
+<title>RoboTalk - Forgetful AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">RoboTalk</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -162,128 +105,167 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">RoboTalk</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Forgetful AI</h1>
+                  <div>
+        <div class="description">
+          My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">image generation</div>
+                <div class="quarto-category">computer vision</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Leesa </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 13, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="computer vision">computer vision <span class="quarto-category-count">(2)</span></div><div class="category" data-category="image generation">image generation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="prompting">prompting <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="storybook-struggles-part-i" class="level2">
+<h2 class="anchored" data-anchor-id="storybook-struggles-part-i">Storybook Struggles (Part I)</h2>
+<p>It’s Valentine’s Day, and I thought it would be great to have ChatGPT help me spread a little bit of love in the world. So, I asked it to write me a love story… <em>but with a twist!</em></p>
+<p>Below I’ve chronicled the twists and turns of my attempts to get ChatGPT to write me a story suitable for the holiday.</p>
+<section id="writing-the-initial-story" class="level3">
+<h3 class="anchored" data-anchor-id="writing-the-initial-story">Writing the initial story</h3>
+<p>The first thing to do was to get ChatGPT to write me a love story that truly reflected my - and many others’ - feelings about Valentine’s Day!</p>
+<p>The prompt I used was:</p>
+<blockquote class="blockquote">
+<p><em>Hello! You are an aspiring author. To this point, you have only written horror novels. You love scary things. You love to instill fear in others. You love monsters, and blood, and ghosts, and death. Now you are tasked with writing a love story for Valentine’s Day. It should be around 100 words.</em></p>
+</blockquote>
+<p>Honestly, the story ChatGPT gave was pretty spot on impressive:</p>
+<blockquote class="blockquote">
+<p><em>In the shadow of an ancient, twisted oak, beneath a moonlit sky, two souls entwined by fate’s cruel hand found sanctuary. Evan, haunted by whispers of the past, and Lila, a beacon of light in his darkened world, discovered solace in each other’s arms. Amid the encroaching gloom, their love was a rebellious flame, defying the darkness. Their kisses, soft as the murmur of ghostly winds, spoke of a love as enduring as the stars. As the night whispered secrets of the undead, their hearts beat in unison, a testament to love’s power over death. In this eerie embrace, they found their forever, a love story not even the specters could tarnish.</em></p>
+</blockquote>
+<p>The piece seemed to incorporate most of the aspects from the prompt. The story had a rather dark, horror-esque theme, but still incorporated a love story suitable for Valentine’s Day. I even asked ChatGPT to do a word count to see if it had followed my instructions regarding the piece’s length:</p>
+<blockquote class="blockquote">
+<p><em>How many words is that?</em></p>
+</blockquote>
+<p>I kept the prompt rather simple to determine if ChatGPT would be able to understand exactly what I was asking - namely, please count the number of the words in your response - and it performed admirably, providing not only the number of words…</p>
+<blockquote class="blockquote">
+<p><em>The story contains 112 words</em></p>
+</blockquote>
+<p>… but also the code used to calculate it…</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body2_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f7beabf9-ba67-4d5b-9f4a-a89701272f3b.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>Not exactly right, but I figured, good enough… <em>for now!</em>count g)</p>
+</section>
+<section id="stretching-the-word-count-muscle" class="level3">
+<h3 class="anchored" data-anchor-id="stretching-the-word-count-muscle">Stretching the word count muscle</h3>
+<p>I realized the original story was a bit short, so I wanted to see if ChatGPT could expand it for me. So I followed up with further instructions:</p>
+<blockquote class="blockquote">
+<p><em>Great! Now can you rewrite the story in 200 words?</em></p>
+</blockquote>
+<p>This ChatGPT was a bit further from the goal, providing a story that, while entertaining, came in at 305 words.</p>
+<blockquote class="blockquote">
+<p>In the shadow of an ancient, twisted oak, beneath the velvet embrace of a moonlit sky, two souls, entwined by fate’s cruel and unyielding hand, found an unexpected sanctuary amidst whispers of the forgotten and the unseen. Evan, whose heart was haunted by echoes of the past, a specter wandering through life’s shadowed corridors, and Lila, a radiant beacon of hope, piercing his eternal night, discovered in each other’s embrace a solace that defied the encroaching darkness that sought to claim them.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Their love, a rebellious flame, flickered fiercely against the night’s chilling embrace, a testament to its power to defy the cold grip of despair. Their kisses, tender and soft, carried the warmth of their intertwined souls, speaking of a love as enduring as the stars that watched over them from the heavens. Amid the whispers of the night, filled with secrets of the undead and tales of spectral hauntings, their hearts beat in unison, a melody of life and love that drowned out the murmurs of death.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>As they stood together, hand in hand, beneath the ancient oak, the world around them seemed to pause, acknowledging the strength of their bond. The darkness, which once seemed an impenetrable veil, now felt like a mere shadow, chased away by the light of their love. In this eerie, yet magical embrace, Evan and Lila found their forever, a testament to the fact that even in a world filled with monsters, and blood, and ghosts, and death, love could flourish, a beacon of hope illuminating the darkest of nights.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>In this love story, crafted from the threads of horror and beauty intertwined, they proved that even the most haunted of hearts could find peace, and perhaps, a chance at redemption. This was their Valentine, a story not of fear, but of love’s triumph over the shadows.</p>
+</blockquote>
+<p>This was a great story as well - and I think it managed to keep the same style and story elements from the original version. However, I noticed something… <em>the story seemed a bit long, right?</em>adg, so I followed up and asked for a word count, getting the following response:ues.. <em>The revised story contains 305 words.</em> &gt;</p>
+<p>Hmm… No that’s a bit far off. Let’s try again, I think!</p>
+<p>I prompted:</p>
+<blockquote class="blockquote">
+<p><em>Please shorten it to 200 words</em></p>
+</blockquote>
+<p>ChatGPT’s response?</p>
+<blockquote class="blockquote">
+<p>In the shadow of an ancient oak, under a moonlit sky, Evan and Lila, two souls bound by fate, found solace. Evan, haunted by past shadows, and Lila, a light in his darkness, discovered love amidst the gloom. Their love, a defiant flame against the night, was a testament to their bond. Their kisses, soft as whispers, spoke of enduring love, stronger than the secrets of the night.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>As they stood hand in hand, the world seemed to acknowledge their union, the darkness retreating before their love’s light. In this embrace, they found their forever, proving that even in a world of shadows, love could flourish. Their story, a blend of horror and beauty, showed that the most haunted hearts could find peace and redemption. This was their Valentine—a tale not of fear, but of love’s victory over darkness.</p>
+</blockquote>
+<p>Well… <em>now, that seems a bit <strong>short</strong>!!</em></p>
+<p>Upon asking, I realized I was correct - the new story was only 139 words.</p>
+<p>Interesting, it seems like ChatGPT has an issue with word count? <strong>Let’s explore that!</strong> of ice.rice, A heart so true, for a heart of ice.</p>
+</section>
+</section>
+<section id="following-the-leader" class="level2">
+<h2 class="anchored" data-anchor-id="following-the-leader">Following the leader?</h2>
+<p>I sent the following query to ChatGPT</p>
+<blockquote class="blockquote">
+<p><em>Hmm… that’s a bit short</em></p>
+</blockquote>
+<p>It replied</p>
+<blockquote class="blockquote">
+<p>Let’s expand it to meet the 200-word requirement more closely.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Beneath the ancient canopy of a twisted oak, under a sky bathed in moonlight, Evan and Lila found a sanctuary woven from the threads of destiny. Evan, a soul haunted by the echoes of a shadowed past, and Lila, a beacon of unwavering light in his world of darkness, discovered an unexpected solace in each other’s presence. Their love, a rebellious spark, ignited a flame that defied the engulfing night, a beacon against the encroaching shadows.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Their kisses, gentle as the caress of a ghostly breeze, were declarations of a love that promised eternity, transcending the whispers of the night that spoke of forgotten tales and spectral presences. As they stood, hands clasped, beneath the watchful gaze of the oak, the world around them stilled, a silent witness to the strength of their bond. The darkness, once a suffocating veil, now seemed a mere backdrop, its advance halted by the radiance of their love.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>In this moment, amidst the eerie yet enchanting embrace, Evan and Lila found their forever, a testament to the enduring power of love over the specters of despair. Their story, a tapestry of horror and beauty, horror and hope intertwined, showcased that even the most tormented souls could find peace, and perhaps, a path to redemption. This narrative, their Valentine, was not a tale woven from fear, but a celebration of love’s triumph over the darkest shadows.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Let’s check the word count now.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The expanded story now contains 231 words, slightly over the target but closer to the intended length.</p>
+</blockquote>
+<p>I found a few things interesting here: 1. I never explicitly stated that I wanted the system to increase the story’s length. That it immediately knew that I was unhappy and corrected its response is a pretty impressive understanding of subtext. 2. The system automatically conducted a word count after producing the new story without needing prompting from me, which is another impressive understanding of my desires. 3. Despite all this, the story is still not the correct length.</p>
+<p><strong><em>Interesting!</em></strong> length. &gt;</p>
+<section id="a-word-count-spiral" class="level3">
+<h3 class="anchored" data-anchor-id="a-word-count-spiral">A Word Count Spiral</h3>
+<p>I found it very interesting that ChatGPT seemed unable to meet me demands for a specific word count - especially becuase this is a skill with which most students are very familiar. I decided to see if I could push it a bit further.</p>
+<p>I prompted:</p>
+<blockquote class="blockquote">
+<p>Please ensure that your output is exactly 200 words</p>
+</blockquote>
+<p>And ChatGPT continued to struggle. It subsequently produced 4 additional versions of the story, each time independently conducting a word count analysis without further input from me. And each time, the stories were off from the word count target, coming in at <strong>241, 174, 185, and 186 words respectively</strong>.</p>
+<p><strong>DISAPPOINTING</strong></p>
+<p>Ultimately it took another 3 rounds of stories - and the very pointed question of <em>“Why is this not 200 words?”</em> - to a draft that had 199 words. It’s still not perfect, but close enough!!</p>
+<p><strong>It just goes to show that even some of the tasks that we think ChatGPT might be best suited for are still difficult!</strong></p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="LLMs,prompting,image generation,computer vision" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1708311340552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
-<div class="thumbnail">
-<p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p><a href="./posts/001_first_post/body1.html" class="no-external">
-<p class="card-img-top"><img src="posts/001_first_post/body1_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f1cb743c-b1a4-4a58-8344-d6c9fae8d24f.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/001_first_post/body1.html" class="no-external">Forgetful AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/001_first_post/body1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('image generation'); return false;">
-image generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/001_first_post/body1.html" class="no-external">My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/001_first_post/body1.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="LLMs,prompting,image generation,computer vision" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1708311340552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1525">
-<div class="thumbnail">
-<p><a href="./posts/002_second_post/body2.html" class="no-external"></a></p><a href="./posts/002_second_post/body2.html" class="no-external">
-<p class="card-img-top"><img src="posts/002_second_post/body2_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f7beabf9-ba67-4d5b-9f4a-a89701272f3b.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/002_second_post/body2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_second_post/body2.html" class="no-external">Forgetful AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/002_second_post/body2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('image generation'); return false;">
-image generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/002_second_post/body2.html" class="no-external">My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/002_second_post/body2.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
