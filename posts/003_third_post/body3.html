@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leesa">
+<meta name="dcterms.date" content="2024-02-19">
+<meta name="description" content="What happens when we try to get a little romance out of ChatGPT?">
 
-<title>RoboTalk</title>
+<title>RoboTalk - Storybook Struggles (Part II)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">RoboTalk</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -162,176 +105,221 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">RoboTalk</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Storybook Struggles (Part II)</h1>
+                  <div>
+        <div class="description">
+          What happens when we try to get a little romance out of ChatGPT?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">prompting</div>
+                <div class="quarto-category">text generation</div>
+                <div class="quarto-category">text analysis</div>
+                <div class="quarto-category">computer vision</div>
+                <div class="quarto-category">image generation</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Leesa </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 19, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(3)</span></div><div class="category" data-category="computer vision">computer vision <span class="quarto-category-count">(2)</span></div><div class="category" data-category="image generation">image generation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="prompting">prompting <span class="quarto-category-count">(3)</span></div><div class="category" data-category="text analysis">text analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="text generation">text generation <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="storybook-struggles-part-ii" class="level2">
+<h2 class="anchored" data-anchor-id="storybook-struggles-part-ii">Storybook Struggles (Part II)</h2>
+<p>Valentine’s Day is technically over, but that doesn’t mean that love is dead!</p>
+<p>Below I’ve continued with my effort to get ChatGPT to write me a story that I’ll enjoy.</p>
+<section id="love-in-darkness" class="level3">
+<h3 class="anchored" data-anchor-id="love-in-darkness">Love in darkness</h3>
+<p>In Part I, I tried to get ChatGPT to write me a horror-themed love story - however, I really let myself get distracted by the system’s word count function…</p>
+<p>In this post, we’ll continue to explore ChatGPT’s creativity.</p>
+<p>This is the story we had by the end of the last post:</p>
+<blockquote class="blockquote">
+<p>In a realm where shadows reigned supreme, Evan found himself lost, wandering amidst the whispers of the past that clung to him like a second skin. It was in this realm of eternal night that Lila appeared, a luminous beacon in the oppressive darkness. Her presence was a balm to his frayed edges, a light guiding him back from the brink of despair.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Their love was an unexpected gift, a rare bloom in the heart of a shadowed forest. It was a love that spoke in soft whispers and tender touches, a promise made in the silent communion of their souls. Together, they forged a sanctuary amidst the darkness, a haven where light reigned supreme.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The world around them took notice, the night itself seemed to hold its breath in reverence of their bond. In the heart of darkness, they discovered an enduring truth: love, once kindled, cannot be extinguished. It burns brightly, a beacon of hope that guides the lost back home.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Their story, a testament to the enduring power of love, remains a beacon of hope for all who wander in the shadowed realms, a reminder that even in the darkest of nights, love finds a way.</p>
+</blockquote>
+<p>The story was solid - and finally met the word count requirements - but it wasn’t very interesting, was it? I wanted more plot to follow to keep readers engaged, so I followed up with:</p>
+<blockquote class="blockquote">
+<p>Can you give the story a real plot? Nothing really happens in it right now</p>
+</blockquote>
+<p>ChatGPT replied with an updated tale:</p>
+<blockquote class="blockquote">
+<p>In a land shrouded in perpetual night, Evan, a wanderer haunted by his past, sought solace in the heart of the darkness. The forest, alive with whispers of the lost and the damned, offered no reprieve for his tormented soul. It was here, amid the ancient trees, that he stumbled upon Lila, a rebel fighting against the darkness that threatened to engulf their world.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Lila, wielding light as her weapon, had long battled the shadows that sought to claim the land. Her spirit, unbroken despite the encroaching gloom, ignited a spark within Evan. Together, they embarked on a perilous quest to vanquish the darkness, their bond forged in the fires of their shared struggle.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Their journey led them through haunted valleys and over mountains cloaked in despair. They faced creatures born from the deepest shadows, each victory bringing them closer to their ultimate confrontation with the darkness itself. As they approached the heart of the night, where shadows were thickest, their love was tested in ways they could never have imagined.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>In the final battle, beneath the shadow of the world’s oldest tree, their combined light shattered the darkness. But victory came at a cost: Lila was consumed by the very shadows they sought to destroy, her sacrifice ensuring the dawn of a new day.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Evan, heartbroken yet undeterred, carried their story forward, a tale of love’s triumph over darkness. Lila’s light lived on within him, a beacon for all who navigate the night. Their saga, a testament to the power of love and sacrifice, inspired generations, a reminder that</p>
+</blockquote>
+<p>This was better!! Now, I understand that their land was taken over by a dark force, and that they were both working to defeat the evil - a noble cause, indeed!</p>
+</section>
+<section id="changing-the-genre" class="level3">
+<h3 class="anchored" data-anchor-id="changing-the-genre">Changing the genre</h3>
+<p>Now I was interested in seeing how ChatGPT would pivot from the original task:</p>
+<blockquote class="blockquote">
+<p>Great! Now your task has changed. You originally thought that you needed to write a story for adults but your publisher actually needs you to write a story for children. Please adapt this current story into a tale for children. Incorporate the same plot points, but split the story into rhyming stanzas - no more than 6.</p>
+</blockquote>
+<p>ChatGPT did a pretty good job, providing the following output:</p>
+<blockquote class="blockquote">
+<p>In a land where night forever reigns<br>
+Evan walked, carrying his chains<br>
+Through dark woods, under starless skies<br>
+He searched for light, with hopeful eyes <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Then came Lila, brave and bright<br>
+A beacon in the endless night.<br>
+Together they would stand and fight,<br>
+Turning darkness into light. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Through valleys deep and mountains high,<br>
+Beneath the never-lighting sky,<br>
+They battled shadows, side by side,<br>
+With love and courage as their guide.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>At the world’s heart, where shadows dwell,<br>
+They faced the dark, a final knell.<br>
+Lila’s light, pure and bright,<br>
+Shattered the eternal night. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>But in her light’s brilliant flare,<br>
+She faded, leaving Evan there.<br>
+Her sacrifice, a new dawn’s birth,<br>
+Brought morning’s light back to the Earth. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Evan’s heart, both strong and true,<br>
+Carries her light the whole world through.<br>
+A tale for all, both big and small,<br>
+Of how love’s light conquers all. <br></p>
+</blockquote>
+<p>It was well done, and it incorporated both the rhyming, as well as the stanza limit I imposed! However, I still wans’t really <em>enjoying</em> the story.</p>
+<p>I prompted again:</p>
+<blockquote class="blockquote">
+<p>Pretty good - but can you incorporate more specific plot? What are they doing? Who are they fighting? Incorporate some specific fantasy or horror elements to make the story more interesting to an audience</p>
+</blockquote>
+<p>ChatGPT’s response:</p>
+<blockquote class="blockquote">
+<p>In a realm where shadows ruled the day,<br>
+Evan walked a hidden way.<br>
+Haunted by whispers, ghosts, and fears,<br>
+He wandered long, through endless years. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Lila appeared, with light so grand,<br>
+A shining staff held in her hand.<br>
+“Together, we’ll make the night retreat,<br>
+And all the shadow beasts we’ll beat!” <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Through twisted forests, dark and dire,<br>
+Past rivers of fire, and mountains higher,<br>
+They faced the goblins, ghosts, and more,<br>
+Each victory sweeter than before. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>At last, they reached the shadow’s heart,<br>
+Where the darkest magic did impart.<br>
+The Shadow King, with eyes of coal,<br>
+Threatened to swallow the world whole. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>With Lila’s light and Evan’s might,<br>
+They fought the king with all their right.<br>
+Lila’s magic filled the air,<br>
+And banished darkness from its lair. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>But in her final, glorious stand,<br>
+She vanished into the shadow land.<br>
+Evan wept, for the cost was known,<br>
+Her light through his courage shown. <br></p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Now children sleep, with dreams so bright,<br>
+In the peaceful glow of Lila’s light.<br>
+Evan’s tale, from night to morn,<br>
+Shows even the scared can be reborn. <br></p>
+</blockquote>
+<p>This was pretty good - it added a stronger plot, including a battle with a Shadow King, as well as Lila’s sacrifice.</p>
+<p>As always, it is fascinating that of all the things we have to check, spelling, grammar, and readability aren’t issues for ChatGPT at all!</p>
+</section>
+<section id="getting-a-little-help-from-a-friend" class="level3">
+<h3 class="anchored" data-anchor-id="getting-a-little-help-from-a-friend">Getting a little help from a friend</h3>
+<p>As I was trying to create this post, I ran into quite a few formatting issues. I had no idea how to get the poem into a stanza format. Instead, the text was coming out looking like this:</p>
+<blockquote class="blockquote">
+<p>In a realm where shadows ruled the day, / Evan walked a hidden way. / Haunted by whispers, ghosts, and fears, / He wandered long, through endless years.</p>
+</blockquote>
+<p>For these types of technical, fact-based issues, I tend to turn towards <strong>Copilot</strong> to get answers.</p>
+<p>I prompted Copilot:</p>
+<blockquote class="blockquote">
+<p>How would I format this in python to keep the stanzas separate?</p>
+</blockquote>
+<p>I also pasted the story into the chat as well.</p>
+<p>Copilot responded:</p>
+<p><img src="body3_files/figure-html/88ae60c5-be1d-46ac-bf98-4029e93cf722-1-36b82199-2039-49b7-a990-17948f7a0cc7.png" class="img-fluid" alt="image.png"> <img src="body3_files/figure-html/88ae60c5-be1d-46ac-bf98-4029e93cf722-3-ffc0d9f0-281a-4bff-a244-b89590287f8b.png" class="img-fluid" alt="image.png"></p>
+<p>I followed up with one more question:</p>
+<blockquote class="blockquote">
+<p>And how can I put each of the lines of different lines? Currently, they appear as a single sentence when I run the cell</p>
+</blockquote>
+<p>And it responded again: <img src="body3_files/figure-html/88ae60c5-be1d-46ac-bf98-4029e93cf722-2-f37d2d49-fcd4-4d31-adc3-36cbc1708ff5.png" class="img-fluid" alt="image.png"></p>
+<p>The answer was very clear and helpful, and it enabled me to create the format</p>
+<p>Plus, notice how happy Copilot is to provide input - lots of smiley faces! (ChatGPT never smiles at me…)</p>
+<p><strong>Overall, I was very impressed with ChatGPT’s text generation skills!</strong></p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="LLMs,prompting,text generation,text analysis,computer vision,image generation" data-listing-date-sort="1708300800000" data-listing-file-modified-sort="1708462804380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1310">
-<div class="thumbnail">
-<p><a href="./posts/003_third_post/body3.html" class="no-external"></a></p><a href="./posts/003_third_post/body3.html" class="no-external">
-<p class="card-img-top"><img src="posts/003_third_post/body3_files/figure-html/88ae60c5-be1d-46ac-bf98-4029e93cf722-1-36b82199-2039-49b7-a990-17948f7a0cc7.png" alt="image.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/003_third_post/body3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/003_third_post/body3.html" class="no-external">Storybook Struggles (Part II)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/003_third_post/body3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('text generation'); return false;">
-text generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('text analysis'); return false;">
-text analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('image generation'); return false;">
-image generation
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/003_third_post/body3.html" class="no-external">What happens when we try to get a little romance out of ChatGPT?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/003_third_post/body3.html" class="no-external">
-<div class="listing-date">
-Feb 19, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="LLMs,prompting,text generation,text analysis" data-listing-date-sort="1707868800000" data-listing-file-modified-sort="1708462804376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1585">
-<div class="thumbnail">
-<p><a href="./posts/002_second_post/body2.html" class="no-external"></a></p><a href="./posts/002_second_post/body2.html" class="no-external">
-<p class="card-img-top"><img src="posts/002_second_post/body2_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f7beabf9-ba67-4d5b-9f4a-a89701272f3b.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/002_second_post/body2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_second_post/body2.html" class="no-external">Storybook Struggles</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/002_second_post/body2.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('text generation'); return false;">
-text generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('text analysis'); return false;">
-text analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/002_second_post/body2.html" class="no-external">What happens when we try to get a little romance out of ChatGPT?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/002_second_post/body2.html" class="no-external">
-<div class="listing-date">
-Feb 14, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="LLMs,prompting,image generation,computer vision" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1708462804376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
-<div class="thumbnail">
-<p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p><a href="./posts/001_first_post/body1.html" class="no-external">
-<p class="card-img-top"><img src="posts/001_first_post/body1_files/figure-html/e9d7e97a-f92e-411d-8c62-1608d7820af7-1-f1cb743c-b1a4-4a58-8344-d6c9fae8d24f.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/001_first_post/body1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/001_first_post/body1.html" class="no-external">Forgetful AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/001_first_post/body1.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('image generation'); return false;">
-image generation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/001_first_post/body1.html" class="no-external">My journey of attempting to get ChatGPT to generate a artistic images based on a realistic photos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/001_first_post/body1.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Leesa
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
