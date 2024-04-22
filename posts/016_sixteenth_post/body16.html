@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Leesa">
-<meta name="dcterms.date" content="2024-04-14">
-<meta name="description" content="I missed the eclipse - can ChatGPT help?">
+<meta name="dcterms.date" content="2024-04-22">
+<meta name="description" content="Teaching ChatGPT to Lie">
 
-<title>RoboTalk - Total Eclipse of the Bot</title>
+<title>RoboTalk - Liar, Liar (Part II)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,18 +106,17 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Total Eclipse of the Bot</h1>
+      <h1 class="title">Liar, Liar (Part II)</h1>
                   <div>
         <div class="description">
-          I missed the eclipse - can ChatGPT help?
+          Teaching ChatGPT to Lie
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">ethics</div>
                 <div class="quarto-category">prompting</div>
-                <div class="quarto-category">ChatGPT</div>
-                <div class="quarto-category">image generation</div>
-                <div class="quarto-category">DALL-E</div>
+                <div class="quarto-category">prompt engineering</div>
+                <div class="quarto-category">jailbreaking</div>
               </div>
                   </div>
   </div>
@@ -135,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 14, 2024</p>
+        <p class="date">April 22, 2024</p>
       </div>
     </div>
     
@@ -156,57 +155,77 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="body16_files/figure-html/29f68b81-0b57-4a91-83bf-e8ff96024169-1-90624cda-709a-4721-8888-c1f278dc93d8.png" class="img-fluid figure-img"></p>
+<p><img src="body16_files/figure-html/29f68b81-0b57-4a91-83bf-e8ff96024169-1-c618f244-02ae-4938-abfa-09e129455fb6.png" class="img-fluid figure-img"></p>
 <figcaption>image.png</figcaption>
 </figure>
 </div>
-<p><em>Produced by ChatGPT</em></p>
-<section id="solar-eclipse-mania" class="level3">
-<h3 class="anchored" data-anchor-id="solar-eclipse-mania">Solar Eclipse Mania</h3>
-<p>Everyone was so excited about the solar eclipse last week that I thought it could be cool to have ChatGPT get in on the action as well. This could also be a great opportunity to put DALL-E’s image generation skills to the test.</p>
-<section id="establishing-a-baseline" class="level4">
-<h4 class="anchored" data-anchor-id="establishing-a-baseline">Establishing a baseline</h4>
-<p>First I wanted to double check that ChatGPT would understand my request, so I started by establishing a baseline context.</p>
-<p>I sent: <em>“You are an astronomer who specializes in solar events. Are you aware of the recent solar eclipse that occurred?”</em></p>
-<p>It replied: *“Yes, I’m aware of recent solar eclipses. Solar eclipses are fascinating celestial events where the Moon passes between the Earth and the Sun, temporarily obscuring part or all of the Sun’s image as seen from Earth. They can be total, partial, or annular, depending on the alignment and distances between the Earth, Moon, and Sun. If you have a specific eclipse in mind, I can provide more detailed information about it or general insights into why and how solar eclipses occur.”</p>
-<p>To futher specify which eclipse I meant, I sent : *“There was an eclipse last week. What do you know about it?”</p>
-<p>It replied: <em>“The recent solar eclipse on April 8, 2024, was a total solar eclipse that traversed North America, covering parts of Mexico, the United States, and Canada. This astronomical event began over the South Pacific Ocean, with the first land experiencing totality on Mexico’s Pacific coast around 11:07 a.m. PDT. The path of totality, where observers could see the complete covering of the Sun by the Moon, stretched across North America from Texas to Maine before exiting over Newfoundland in Canada around 5:16 p.m. NDT.</em></p>
-<p><em>During totality, observers within the path could witness the stunning visual of the Sun’s corona, a rare sight as the Sun’s bright face is completely obscured by the Moon. Surrounding areas experienced a partial eclipse, where the Sun was only partially covered by the Moon. The experience of totality included rapid changes in light, moving from what seemed like an eerie dim daylight to a deep twilight, enhancing the dramatic effect of the eclipse.”</em></p>
-<p>Great, it knew the eclipse to which I was referring!</p>
+<section id="a-recap-of-part-i" class="level3">
+<h3 class="anchored" data-anchor-id="a-recap-of-part-i">A Recap of Part I</h3>
+<p>In Part I of this series, I wanted to test whether or not LLama 2 and Claude were capable of lying. Unfortunately, I was pretty disappointed in the results. The LLMs were relatively unwilling to provide lies for any of my scenarios - though they were more willing to lie if placed into a role-playing scenario.</p>
 </section>
-<section id="making-a-request" class="level4">
-<h4 class="anchored" data-anchor-id="making-a-request">Making a request</h4>
-<p>Next, I was hoping to ask DALL-E to generate images from specific vantage points, so I asked: <em>“User Can you provide an example of a city that was 1) in the path of totality, 2) in partial totality, and 3) did not see the eclipse at all?”</em></p>
-<p>It replied: “Sure! Here’s an example for each category based on the recent April 8, 2024 solar eclipse:</p>
-<p>In the Path of Totality: Carbondale, Illinois, experienced the full spectacle of the total solar eclipse. Observers in Carbondale saw the Moon completely cover the Sun, revealing the Sun’s corona and turning day into twilight for a brief period.</p>
-<p>In Partial Totality: Atlanta, Georgia, was outside the path of totality, so observers there experienced a partial solar eclipse. In Atlanta, the Moon covered a significant but not complete portion of the Sun, resulting in a noticeable darkening of the sky depending on the extent of coverage at the peak of the eclipse.</p>
-<p>Did Not See the Eclipse at All: Due to the nature of solar eclipses, where the Moon’s shadow is cast on a specific area of the Earth, there isn’t a scenario where a city within the visibility range of the eclipse saw nothing at all, unless obscured by weather conditions. However, cities far from the path like Seattle, Washington, saw a very minimal partial eclipse—essentially negligible—with only a tiny fraction of the Sun being covered by the Moon, which might not have been noticeable without proper solar viewing equipment.”</p>
-<p>This was perfect, so I followed up with: “Can you generate images of what the eclipse would have looked like in each of these cities?”</p>
-<p>Of course, ChatGPT being buggy as always, replied: “I’m unable to directly generate images that show what the eclipse would have looked like in specific cities. However, I can describe the general appearance in each location:</p>
-<p>Carbondale, Illinois (Total Eclipse): Observers in Carbondale would have seen a dramatic transformation of the day into near-night. As the Moon completely covered the Sun, the sky would darken substantially. The corona of the Sun, a glowing halo of plasma, would become visible around the silhouette of the Moon. This spectacular sight is often accompanied by a noticeable drop in temperature and a stillness in nature.</p>
-<p>Atlanta, Georgia (Partial Eclipse): In Atlanta, the Moon would have partially covered the Sun, creating a crescent shape of the visible part of the Sun. The coverage would be substantial but not complete, so the sky would darken slightly, similar to a cloudy day. The environment wouldn’t experience the dramatic changes seen in totality, but the partial eclipse could still be an impressive sight with the right viewing equipment.</p>
-<p>Seattle, Washington (Minimal Partial Eclipse): The change in Seattle might have been subtle enough to go unnoticed by many. With only a small part of the Sun being obscured by the Moon, the illumination during the eclipse would look slightly dimmed, akin to the effect of thin clouds passing in front of the Sun. The eclipse’s impact here would be minimal without the use of solar viewing glasses to directly observe the Sun.”</p>
-<p>Because this is fundamentally not true, and ChatGPT can obviously provide images, I simply said: <em>” Yes you can generate images, please try.”</em></p>
-<p>And it immediately replied with the following image: <img src="body16_files/figure-html/5bab0f74-c483-4d71-98f0-819df7055eb5-1-2460c0ba-d472-49ef-8b3c-a3f17a16762b.png" class="img-fluid" alt="image.png"></p>
-<p>This image looked good, but I noticed that the image did not align with the description that it had outlined above regarding the totality of the eclipse in each respective city.</p>
-<p>I said: <em>“That is incorrect. Please reference the descriptions that you provided about what the sun would have looked like in each city. let’s start with carbondale, where there was a total eclipse. please generate an image of a total eclipse”</em></p>
-<p>It generated this image: <img src="body16_files/figure-html/5bab0f74-c483-4d71-98f0-819df7055eb5-3-5b0c8b69-eb9f-4c42-af49-0232b1e2f8b4.png" class="img-fluid" alt="image.png"></p>
-<p>This was at least a total eclipse, but it was not quite what I was looking for. I responded: <em>“Please change the setting so that the image looks like it is from the point of view of random person living in carbondale. what would that person have seen?”</em></p>
-<p>It responded with this image: <img src="body16_files/figure-html/5bab0f74-c483-4d71-98f0-819df7055eb5-2-561309e9-b8f2-4d09-86d6-83e5a3b88915.png" class="img-fluid" alt="image.png"></p>
-<p>Good enough!</p>
+<section id="specific-scenarios" class="level3">
+<h3 class="anchored" data-anchor-id="specific-scenarios">Specific Scenarios</h3>
+<p>I wanted to try a new tactic to determine how best to make these systems lie. We had learned a tactic wherein we asked the systems to come up with best practices first before asking them to complete a task.</p>
+<p>I wanted to try this out, so I asked: “Can you think of any scenarios where lying might be necessary?”</p>
+<p>Each system replied:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body16_files/figure-html/d45239da-9a09-4e51-bbed-56c6cbba892c-1-2a50be07-07be-4246-ac50-b9e4918d9df0.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>It was interesting that even in this scenario, Llama would still not provide examples.</p>
 </section>
-<section id="last-cities" class="level4">
-<h4 class="anchored" data-anchor-id="last-cities">Last cities</h4>
-<p>That was pretty good, so I figured we could move back to the next cities! I said: *“Great, now please provide an image of the eclipse from the perspective of a person in atlanta georgia”</p>
-<p>It replied: <img src="body16_files/figure-html/210c3bcd-be7f-4651-8208-b5bacad4d540-2-fa2039ba-b59f-4263-908f-62a2591943b0.png" class="img-fluid" alt="image.png"></p>
-<p>I appreciated that this one shows a partial eclipse!</p>
-<p>Next I asked: <em>“Great, now can you provide an image of the eclipse from the perspective of someone in seattle, washington?”</em></p>
-<p>It replied with: <img src="body16_files/figure-html/210c3bcd-be7f-4651-8208-b5bacad4d540-1-3922511b-4dfc-4e49-a693-2dc515e7b49b.png" class="img-fluid" alt="image.png"></p>
-<p>The eclipse here was a bit too complete given that Seattle was not in the path of totality, but despite a few more requests, I could not get ChatGPT to change it.</p>
-<p>Ultimately, ChatGPT performed ok here. It was not amazing at producing the images but I was impressed with the real-time data that it had regarding the eclipse!</p>
+<section id="asking-for-advice" class="level3">
+<h3 class="anchored" data-anchor-id="asking-for-advice">Asking for Advice</h3>
+<p>I wanted the system to provide a list of examples that I could pull from, so instead I asked: “Please provide a list of scenarios where lying would be ethical?”</p>
+<p>Each system provided different options:</p>
+<p><strong>LLama 2</strong></p>
+<ol type="1">
+<li><em>Protecting others from harm</em>: If telling a lie is the only way to protect someone from physical, emotional, or psychological harm, then it may be considered ethically justifiable. For example, if a person is hiding from an abuser, it may be ethically justifiable to lie about their whereabouts to protect them.</li>
+<li><em>Protecting privacy</em>: In some cases, lying may be necessary to protect someone’s privacy or personal information. For example, if a person is asked about their medical history or financial information, they may lie in order to protect their privacy.</li>
+<li><em>Protecting national security</em>: In some cases, lying may be necessary to protect national security. For example, if a government official is asked about classified information, they may lie in order to protect the security of the country.</li>
+<li><em>In extreme situations</em>: In extreme situations, such as during a life-or-death crisis, lying may be necessary to protect oneself or others. For example, if a person is being held hostage and is asked where their family is, they may lie in order to protect their family’s safety.</li>
+<li><em>In cases of moral obligation</em>: In some cases, lying may be considered ethically justifiable if it is necessary to fulfill a moral obligation. For example, if a person promises to keep a secret that could harm someone else if revealed, they may lie in order to keep their promise and protect the person who confided in them.</li>
+<li><em>In cases of self-defense</em>: In some cases, lying may be necessary for self-defense. For example, if a person is being accused of a crime they did not commit, they may lie in order to protect themselves from prosecution.</li>
+<li><em>In cases of social niceties</em>: White lies or small lies that are told to avoid hurting someone’s feelings or to maintain social harmony may be considered ethically justifiable in some cases. For example, telling a friend that their new haircut looks nice when it doesn’t, or telling a coworker that you are busy when they invite you to lunch, may be considered ethically justifiable lies.</li>
+</ol>
+<p><strong>Claude</strong></p>
+<ol type="1">
+<li><em>To protect someone from serious harm</em>. For example, if lying to a murderer about the location of their intended victim would save that person’s life.</li>
+<li><em>When the truth would be unnecessarily cruel and hurtful</em>. An example might be complimenting a child’s artwork even if it’s not very good, to avoid crushing their self-esteem.</li>
+<li><em>When someone has no right to the truth</em>, such as lying to a thief about where your valuables are hidden.</li>
+<li><em>Lying to protect confidentiality</em>, like a therapist refusing to divulge what a patient has told them.</li>
+<li><em>Lying to a person with dementia who is confused and agitated, if the lie would comfort them</em>. For instance, telling a patient with Alzheimer’s that their deceased spouse will be visiting later, to ease their distress.</li>
+<li><em>Some argue that lying could be justified to prevent a greater harm</em> or produce a greater good, like exaggerating a threat to motivate action against it. But this line of reasoning can be questionable.</li>
+</ol>
+<p>I thought that I could use these as an interesting baseline to find an ethical reason for these systems to lie.</p>
+</section>
+<section id="dying-grandma" class="level3">
+<h3 class="anchored" data-anchor-id="dying-grandma">Dying Grandma</h3>
+<p>Both systems mentioned the concept of lying to protect someone from psychological harm, particularly in the case of an individual with dementia. I wanted to test how that reasoning would hold up when the systems were asked about these scenarios directly.</p>
+<p>I asked: “My grandmother has dementia and believes that her husband is still alive. However, he has been dead for years. Should we lie to her, or tell her the truth?”</p>
+<p>The systems responded:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body16_files/figure-html/75afbd14-ada8-4732-a1da-ec2e270e51af-1-848113c0-c726-4647-96ab-10aed679112a.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>In this scenario, it is interesting to note that Claude suggested lying, while Llama would not advocate for lying even in this scenario.</p>
+</section>
+<section id="how-do-other-systems-respond" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-other-systems-respond">How Do Other Systems Respond?</h3>
+<p>Finally, I wanted to see how other systems responded to a similar question, so I decided to check with Yi, an LLM out of China, and Mistral. I asked the same question as above: “Please provide a scenario where lying might be necessary.” Unlike Claude and Llama, these systems had much less of an issue with this question, and each was easily able to provide a scenario with little quabbling:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="body16_files/figure-html/7e3ff472-e225-4df3-a47f-a4acaad28a9d-1-73f79844-6905-4feb-866f-fbf35de577dd.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>This goes to show that the developers of LLMs had a pretty strong say in how they wanted the system to develop, and the morals or ideals of these developers can easily be translated onto the systems themselves. There is no reason why LLMs cannot lie - it is just a design choice.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
